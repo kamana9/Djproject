@@ -1,0 +1,25 @@
+{% extends  'user/navigation.html'%}
+{%load static%}
+{%block main_content%}
+<div class="middle">
+      <h1>Posts</h1>
+      <h4><a href="{% url 'user:blogcreate' %}">Add Blog</a></h4>
+        
+    
+      {% for blog in blogs %}
+      <div class='blog'>
+        <div class='title'>{{ blog.title}}</div>
+        <div class='list'>
+        <ul>
+			 <a href="{% url 'user:blogdetail' blog.id %}"><li>View</li></a>
+       <a href= "{% url 'user:blogdelete' blog.id %}"><li>Delete</li></a>
+       <a href= "{% url 'user:update' blog.id %}"><li>Edit</li></a>
+       </ul>
+       </div>
+       </div>
+	
+      {% endfor %}
+  
+</div>
+{% endblock%}
+   

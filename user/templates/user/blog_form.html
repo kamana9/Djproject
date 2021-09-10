@@ -1,0 +1,14 @@
+{% extends  'user/navigation.html'%}
+{%load static%}
+{%block main_content%}
+    <div class="form">
+    <a href="{% url 'user:blogs' %}"> Back </a>
+    <form method="Post" action="">
+     {%csrf_token%}
+    {{form.as_p}}
+        <input type="submit">
+    </form>
+        
+    </div>
+{% endblock%}
+   

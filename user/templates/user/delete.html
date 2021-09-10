@@ -1,0 +1,6 @@
+<a href="{% url 'user:blogs' %}"> Back </a>
+<form method="POST">
+{%csrf_token%}
+<p>Are you sure want to delete this blog?"{{blog}}"</p>
+<input type="submit" value="Delete"/>
+</form>

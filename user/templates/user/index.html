@@ -1,0 +1,14 @@
+{% extends  'user/navigation.html'%}
+{%load static%}
+{%block main_content%}
+{%if request.user.is_authenticated%}
+    {{request.user}}
+    <a href=" {%url 'user:logout' %}">Logout</a>
+{% else %}
+    <a href="{%url 'user:signin' %}">Login</a>
+{% endif %}
+    <div class="mid">
+        
+    </div>
+{% endblock%}
+   

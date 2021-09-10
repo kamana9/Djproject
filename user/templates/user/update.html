@@ -1,0 +1,6 @@
+<a href="{% url 'user:blogs' %}"> Back </a>
+<form method="POST">
+{%csrf_token%}
+{{ form_as.p }}
+<input type="submit" value="Edit"/>
+</form>

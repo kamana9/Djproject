@@ -1,0 +1,72 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    }
+.navbar{
+    background-color:#d1d122;
+    height:60px;
+    text-align: center;
+}
+.naviteam{
+    color:white;
+    padding:20px;
+    text-decoration:none;
+    text-align:center;
+    display:inline-block;
+
+    }
+.naviteam:hover{
+        background-color:rgb(118, 104, 136);
+        color:rgb(15, 2, 19);
+        padding:4px;
+    }
+
+.navbar a{
+    text-decoration:none;
+    font-size:25px
+
+}
+.mid{
+    background-image:url(../img/blog.jpg); 
+    height:500px;
+    width:100%;
+    background-size: cover;
+    float:left;
+}
+.footer{
+    float: left;
+    background-color:#d1d122;
+    width:100%;
+    height:60px;
+    color:rgba(129, 129, 127, 0.87);
+    text-align: center;
+    margin-top: 500px;
+    position:absolute;
+}
+/*blog*/
+.post{
+    text-decoration: none;
+    background-color: cadetblue;
+}
+.title{
+    padding:0px;
+    background-color: rgba(34, 96, 230, 0.842);
+    width:94%;
+    font-size: 20px;
+    height:60px;
+    text-align:center;
+    display: inline-block;
+    margin-top:40px;
+
+}
+.select{
+    float:left;
+}
+.postv{
+    height:60px;
+
+}
+.middle h1{
+    margin-right:80%;
+}
+

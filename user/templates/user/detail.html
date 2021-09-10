@@ -1,0 +1,10 @@
+{% extends  'user/navigation.html'%}
+{%load static%}
+{%block main_content%}
+<div class="blogsd">
+    <h1 class="dtitle">{{blog.title}} </h1><br>
+<img class="dimage" src="{{blog.image.url}}">
+<p class="descrip">{{blog.description}}</p><br>
+<p class="dauthor">By:-{{blog.author}}</p>
+</div>
+{%endblock%}
